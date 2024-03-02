@@ -280,3 +280,7 @@ export_presets.cfg
 .mono/
 data_*/
 mono_crash.*.json
+
+
+# VS Code settings for Godot
+.vscode/
