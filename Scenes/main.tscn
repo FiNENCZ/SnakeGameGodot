@@ -1,11 +1,14 @@
-[gd_scene load_steps=3 format=3 uid="uid://dlcwaiefbdjp0"]
+[gd_scene load_steps=4 format=3 uid="uid://dlcwaiefbdjp0"]
 
 [ext_resource type="Script" path="res://Scenes/main.cs" id="1_e7t6a"]
-[ext_resource type="Texture2D" uid="uid://p5c8hr5xbspq" path="res://icon.svg" id="2_tm2sn"]
+[ext_resource type="Texture2D" uid="uid://bj2ambwei5ogi" path="res://assets/bg.png" id="2_sd0mj"]
+[ext_resource type="PackedScene" uid="uid://fk0avlvatv07" path="res://Scenes/hud.tscn" id="3_kkhmy"]
 
 [node name="Main" type="Node2D"]
 script = ExtResource("1_e7t6a")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(100, 350)
-texture = ExtResource("2_tm2sn")
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(500, 550)
+texture = ExtResource("2_sd0mj")
+
+[node name="Hud" parent="." instance=ExtResource("3_kkhmy")]

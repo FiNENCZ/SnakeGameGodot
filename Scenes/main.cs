@@ -1,25 +1,40 @@
 using Godot;
 using System;
+using System.Collections.Generic;
 
 public partial class main : Node2D
 {
 
-    private Vector2 _speed = new Vector2(400, 0);
-    
-    private Sprite2D _sprite;
+        [Export]
+        public PackedScene SnakeScene { get; set; }
+
+        private const bool GameStarted = false;
+        private const int Cells = 20;
+        private const int CellSize = 50;
+        
+        private const int InitialSnakeLength = 5;
+        private const int MillisecondsPerMove = 100;
+
+        private readonly Random _random = new Random();
+        private readonly ConsoleColor _headColor = ConsoleColor.Red;
+        private readonly ConsoleColor _bodyColor = ConsoleColor.Green;
+        private readonly ConsoleColor _berryColor = ConsoleColor.Cyan;
+        private readonly List<int> _xPositions = new List<int>();
+        private readonly List<int> _yPositions = new List<int>();
+
+        private int _score = InitialSnakeLength;
+        private bool _gameOver;
+        private int _berryX;
+        private int _berryY;
 
     public override void _Ready()
     {
-        _sprite = GetNode<Sprite2D>("Sprite2D");
+        GD.Print("Script is ready!");
     }
 
     public override void _Process(double delta)
     {
-        _sprite.Position += _speed * (float)delta;
-        if(_sprite.Position.X > 1000)
-        {
-            _sprite.Position = new Vector2(-100, 350);
-        }
+        GD.Print("Script is ready!");
     }
 
 }
