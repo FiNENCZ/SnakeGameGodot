@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dxyvfago0gd5f"
-path="res://.godot/imported/apple.png-d0c5a0e024efc439723035186c67a74a.ctex"
+uid="uid://da3641f62mfjg"
+path="res://.godot/imported/Snake_spritesheet.png-089dfcc592b1dd2200fe79162f68c3fe.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/apple.png"
-dest_files=["res://.godot/imported/apple.png-d0c5a0e024efc439723035186c67a74a.ctex"]
+source_file="res://Graphics/Snake_spritesheet.png"
+dest_files=["res://.godot/imported/Snake_spritesheet.png-089dfcc592b1dd2200fe79162f68c3fe.ctex"]
 
 [params]
 

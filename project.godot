@@ -11,14 +11,14 @@ config_version=5
 [application]
 
 config/name="SnakeGameGodot"
-run/main_scene="res://Scenes/main.tscn"
+run/main_scene="res://Scenes/MainGame.tscn"
 config/features=PackedStringArray("4.2", "C#", "Forward Plus")
 config/icon="res://icon.svg"
 
 [display]
 
-window/size/viewport_width=1000
-window/size/viewport_height=1050
+window/size/viewport_width=800
+window/size/viewport_height=800
 
 [dotnet]
 
